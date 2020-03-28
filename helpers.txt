@@ -1,0 +1,2 @@
+https://corona.lmao.ninja/v2/historical/{countryName} // for charts timeline
+https://corona.lmao.ninja/countries/Morocco // form last cases
