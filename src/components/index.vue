@@ -122,7 +122,7 @@
                 colored-border
                 icon="mdi-code-json"
                 >
-                    Developed by : <a href="http://" target="_blank" rel="noopener noreferrer">Alhiane Lahcen</a>
+                    Developed by : <a href="https://github.com/Alhiane" target="_blank" rel="noopener noreferrer">Alhiane Lahcen</a>
                 </v-alert>
             </v-col>
         </v-row>
