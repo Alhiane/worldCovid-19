@@ -17,7 +17,7 @@
         </v-card>
         <v-card
             class="mx-auto"
-            color="#3e3e3e"
+            color="#444444"
             max-width="400"
             align="center"
             tile

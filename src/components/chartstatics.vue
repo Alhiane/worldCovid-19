@@ -21,7 +21,7 @@
             <v-title class="display-1">   
                 {{data[1].name}}
             </v-title>
-            <line-chart :data="data[1].data" :stacked="true" :dataset="{borderWidth: 1} " :color="red" :messages="{empty: 'No data'}"/>
+            <line-chart :data="data[1].data" :stacked="true" :dataset="{borderWidth: 1} " :messages="{empty: 'No data'}"/>
         </v-card>
     </div>
 </template>
@@ -34,6 +34,9 @@ export default {
         return {
 
         }
+    },
+    components : {
+        
     }
 }
 </script>

@@ -9,7 +9,7 @@
     >    
         <v-container> <!-- Combo box -->
             <v-row align="center" class="justify-center">
-                <v-col cols="4" class="combo">
+                <v-col  cols="4" class="combo" md="12" sm="12" xs="12" lg="6">
                     <v-select                    
                         :items="countryNames"
                         menu-props="auto"
@@ -35,7 +35,7 @@
     <!-- page main Statics -->
     <v-container>
         <v-row>
-            <v-col cols="3">
+            <v-col sm="12" md="6" lg="3" order-md="1">
                 <statics-card :country="optionSelect" :data="staticsforvcard" v-if="cards"/>
                 <!-- loader Effect -->
                 <v-skeleton-loader
@@ -47,7 +47,7 @@
                 ></v-skeleton-loader>
 
             </v-col>
-            <v-col cols="6">
+            <v-col sm="12" md="12" lg="6" cols="6" order-md="3" order-lg="2">
                 <char :data="data" v-if="!charLoader"></char>
                 <!-- loader Effect -->
                 <v-skeleton-loader
@@ -58,7 +58,7 @@
                     class="mx-auto" v-if="charLoader"
                 ></v-skeleton-loader>
             </v-col>
-            <v-col cols="3">
+            <v-col sm="12" md="6" order-md="2" order-lg="3" lg="3" >
                 <staticsCard2 :data="staticsforvcard" v-if="cards"/>                
                 <!-- loader Effect -->
                 <v-skeleton-loader
@@ -225,6 +225,7 @@ export default {
         },
         fullCombo(){
             this.countryNames = this.Alldata.map(i => i.country);
+            this.countryNames.sort();
         }
     },
     watch :{
