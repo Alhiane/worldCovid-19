@@ -1,36 +1,55 @@
 <template>
   <div>
-    <v-app-bar
-        color="#222222" 
-        dark        
-        flat
-        fade-img-on-scroll
-        scroll-threshold="0"      
-    >    
-        <v-container> <!-- Combo box -->
-            <v-row align="center" class="justify-center">
-                <v-col  cols="4" class="combo" md="12" sm="12" xs="12" lg="6">
-                    <v-select                    
-                        :items="countryNames"
-                        menu-props="auto"
-                        label="Select Country"
-                        hide-details   
-                        v-model="optionSelect"    
-                        v-if="combo"                          
-                    >
-                    </v-select>
-                    <!-- loader Effect -->
-                    <v-skeleton-loader
-                        ref="skeleton"
-                        :boilerplate="boilerplate"
-                        :type="type"
-                        :tile="tile"
-                        class="mx-auto" v-if="comboLoader"
-                    ></v-skeleton-loader>
-                </v-col>
-            </v-row>      
-        </v-container>         
-    </v-app-bar>     
+
+      
+      <v-card flat>
+          <v-toolbar 
+          color="blue-grey darken-4"
+          dark          
+          flat
+          >
+          </v-toolbar>
+
+            <v-card
+            class="mx-auto"
+            style="margin-top :-50px"
+            max-width="700"  
+            flat          
+            >
+            <v-toolbar flat>
+                <v-toolbar-title class="grey--text">
+                    World Covid-19 
+                </v-toolbar-title>
+
+                <v-spacer></v-spacer>
+
+                 <v-select                    
+                    :items="countryNames"
+                    menu-props="auto"
+                    label="Select Country"
+                    hide-details   
+                    v-model="optionSelect"    
+                    v-if="combo"                          
+                >
+                </v-select>
+                <!-- loader Effect -->
+                <v-skeleton-loader
+                    ref="skeleton"
+                    :boilerplate="boilerplate"
+                    :type="type"
+                    :tile="tile"
+                    class="mx-auto" v-if="comboLoader"
+                ></v-skeleton-loader>
+                </v-toolbar>
+                      <v-divider></v-divider>
+
+            </v-card>
+
+      </v-card>
+
+
+
+       
 
     <!-- page main Statics -->
     <v-container>

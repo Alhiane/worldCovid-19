@@ -2,7 +2,7 @@
   <div>
       <v-card
             class="mx-auto"
-            color="#3e3e3e"
+            color="blue-grey darken-4"
             max-width="400"
             align="center"
             tile
@@ -17,7 +17,7 @@
         </v-card>
         <v-card
             class="mx-auto"
-            color="#444444"
+            color="blue-grey darken-3"
             max-width="400"
             align="center"
             tile
