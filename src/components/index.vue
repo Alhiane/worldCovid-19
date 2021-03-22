@@ -215,7 +215,7 @@ export default {
     },
     mounted () {
         this.types = Object.keys(this.$refs.skeleton.rootTypes);
-        this.fetchAllCounitriesName();        
+        //this.fetchAllCounitriesName();        
     },
     methods : {
         fetchDataChar(){
